@@ -190,7 +190,8 @@ $(document).ready(function () {
                 }
             },
             error: function () {
-                alert("Error!");
+				// выводим ошибку в консоль
+                console.log("Error!");
             },
         });
     };
@@ -267,7 +268,7 @@ $(document).ready(function () {
 	string = $('.string-color').text();
 	str = string.split('');
 
-	// строим массив из букв с тегами для перекоаски
+	// строим массив из букв с тегами для перекраски
 	var new_text = '';
 
 	$.each( str ,function(index,value){
@@ -277,37 +278,49 @@ $(document).ready(function () {
 	// заменяем текст на текст с буквами для перекраски
 	$('.string-color').html( new_text );
 
-	// перекоашивание фона по наведению на букву
+	// перекрашивание фона по наведению на букву
 	$('.string-color z').hover(function () {
 
 		// если не пробел, не знаки препинания
-		if( $(this).text().replace(/\s+/g, '') != '' && $(this).text() != '.' && $(this).text() != ',' ) {
+		if( $(this).text().replace(/\s+/g, '') != '' && $(this).text() != '.' && $(this).text() != ',' && $(this).text() != '—'  ) {
 			$(this).css('color', '#fff');
 
 		   var bg_col = a_azbuka[ $(this).text().toLowerCase() ]['color'];
 		   var az_name = a_azbuka[ $(this).text().toLowerCase() ]['nick'];
 
-		   $('.azbuka-namer').text(az_name);
+		   $('.azbuka-namer span').text(az_name);
 
+		   // положение ника
 		   $('.azbuka-namer').css({
-			   'top': $(this).offset().top - 50,
-			   'left': $(this).offset().left - ( $('.azbuka-namer').width() / 2),
+			   'top': $(this).offset().top - 60,
+			   'left': $(this).offset().left - ( $('.azbuka-namer').width() / 2) - 10,
 			   'display': 'flex'
 		   });
 
-		   console.log( az_name, $(this).offset().top, $(this).offset().left );
 		   $('body').css('background', '#' + bg_col);
 		}
 	},
 
 	// возвращаем стандартный фон и цвет буквы при уходе курсора с буквы
 	function () {
-	    $('body').css('background', '');
+		$('body').css('background', '');
 		$(this).css('color', '');
 
 		$('.azbuka-namer').css({
 			'display': 'none'
 		});
+	});
+
+	// нажатие на букву
+	$('.string-color z').click( function () {
+		var az_link = a_azbuka[ $(this).text().toLowerCase() ]['link'];
+
+		// если ссылка не пустая
+		if( az_link != '' ) {
+
+			console.log('ссылка - ' + az_link );
+
+		}
 	});
 
 	// массив имен и цветов
