@@ -402,7 +402,7 @@ $(document).ready(function () {
 		},
 
 		'р' : {
-			'nick' : 'Brosk',
+			'nick' : 'Persh',
 			'color' : '1f248c',
 			'link' : '',
 		},
@@ -412,15 +412,15 @@ $(document).ready(function () {
 
 		'с' : {
 			'nick' : 'Aber',
-			'color' : '252525',
+			'color' : '636363',
 			'link' : '',
 		},
 
-// С - Aber / 252525 - добвила сама
+// С - Aber / 636363 - добвила сама
 
 		'т' : {
 			'nick' : 'Keno',
-			'color' : 'FFE6B3',
+			'color' : 'e09d49',
 			'link' : '',
 		},
 
