@@ -285,7 +285,17 @@ $(document).ready(function () {
 			$(this).css('color', '#fff');
 
 		   var bg_col = a_azbuka[ $(this).text().toLowerCase() ]['color'];
-		   // console.log( bg_col );
+		   var az_name = a_azbuka[ $(this).text().toLowerCase() ]['nick'];
+
+		   $('.azbuka-namer').text(az_name);
+
+		   $('.azbuka-namer').css({
+			   'top': $(this).offset().top - 50,
+			   'left': $(this).offset().left - ( $('.azbuka-namer').width() / 2),
+			   'display': 'flex'
+		   });
+
+		   console.log( az_name, $(this).offset().top, $(this).offset().left );
 		   $('body').css('background', '#' + bg_col);
 		}
 	},
@@ -294,6 +304,10 @@ $(document).ready(function () {
 	function () {
 	    $('body').css('background', '');
 		$(this).css('color', '');
+
+		$('.azbuka-namer').css({
+			'display': 'none'
+		});
 	});
 
 	// массив имен и цветов
