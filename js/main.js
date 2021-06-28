@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+	// поменять на ссылку сервера, на гите так не работат
+	var link = 'https://julianeustroeva.github.io/azbuka';
+
     // прокрутк в галереии
     var sticky = new Sticky(".sticky");
     sticky.update();
@@ -290,10 +294,12 @@ $(document).ready(function () {
 
 		   $('.azbuka-namer span').text(az_name);
 
+		   var z_w =  $('.azbuka-namer').outerWidth() / 2 ;
+
 		   // положение ника
 		   $('.azbuka-namer').css({
-			   'top': $(this).offset().top - 60,
-			   'left': $(this).offset().left - ( $('.azbuka-namer').width() / 2) - 10,
+			   'top': $(this).offset().top - 92,
+			   'left': $(this).offset().left - z_w + ( $(this).outerWidth() / 2 ),
 			   'display': 'flex'
 		   });
 
@@ -314,11 +320,17 @@ $(document).ready(function () {
 	// нажатие на букву
 	$('.string-color z').click( function () {
 		var az_link = a_azbuka[ $(this).text().toLowerCase() ]['link'];
+		var az_name = a_azbuka[ $(this).text().toLowerCase() ]['nick'];
 
 		// если ссылка не пустая
 		if( az_link != '' ) {
 
 			console.log('ссылка - ' + az_link );
+
+		} else {
+			console.log('нет ссылки - /#/' + az_name.toLowerCase() + '.html' );
+
+			window.location.href = link + '/#/' + az_name.toLowerCase() + '.html';
 
 		}
 	});
