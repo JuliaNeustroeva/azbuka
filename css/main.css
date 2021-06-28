@@ -334,7 +334,7 @@ body {
 }
 
 .footer a:hover {
-  text-decoration: none;
+  border-color: #fff;
 }
 
 .footer .wrap {
@@ -413,7 +413,8 @@ body {
 
 .marquee {
   position: absolute;
-  bottom: -100px;
+  /* bottom: -100px; */
+  bottom: -120px;
   left: 0;
   width: 100%;
   font-size: 475px;
@@ -1674,7 +1675,7 @@ body {
 	position: absolute;
 	height: 13px;
 	top: 46px;
-    transform: scaleY(-0.5);
+    transform: scaleY(-1);
     width: 100px;
     fill: #fff;
 }
