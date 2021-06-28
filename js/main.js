@@ -256,4 +256,257 @@ $(document).ready(function () {
             ],
         });
     }
+
+	// возвращаем букву в теге для захвата объекта
+	function color_each(s) {
+		var new_s = '<z>' + s + '</z>';
+		return new_s;
+	}
+
+	// собираем массив букв
+	string = $('.string-color').text();
+	str = string.split('');
+
+	// строим массив из букв с тегами для перекоаски
+	var new_text = '';
+
+	$.each( str ,function(index,value){
+		new_text = new_text + color_each(value);
+	});
+
+	// заменяем текст на текст с буквами для перекраски
+	$('.string-color').html( new_text );
+
+	// перекоашивание фона по наведению на букву
+	$('.string-color z').hover(function () {
+
+		// если не пробел, не знаки препинания
+		if( $(this).text().replace(/\s+/g, '') != '' && $(this).text() != '.' && $(this).text() != ',' ) {
+			$(this).css('color', '#fff');
+
+		   var bg_col = a_azbuka[ $(this).text().toLowerCase() ]['color'];
+		   // console.log( bg_col );
+		   $('body').css('background', '#' + bg_col);
+		}
+	},
+
+	// возвращаем стандартный фон и цвет буквы при уходе курсора с буквы
+	function () {
+	    $('body').css('background', '');
+		$(this).css('color', '');
+	});
+
+	// массив имен и цветов
+	a_azbuka = {
+
+		'а' : {
+			'nick' : 'Aske',
+			'color' : 'E74330',
+			'link' : '',
+		},
+
+		'б' : {
+			'nick' : 'Roof 169',
+			'color' : 'BE3F28',
+			'link' : '',
+		},
+
+		'в' : {
+			'nick' : 'Revansh',
+			'color' : '22686C',
+			'link' : '',
+		},
+
+		'г' : {
+			'nick' : 'Luka',
+			'color' : 'CAACA4',
+			'link' : '',
+		},
+
+		'д' : {
+			'nick' : 'Slak',
+			'color' : 'E11E1A',
+			'link' : '',
+		},
+
+		'е' : {
+			'nick' : 'Kamar',
+			'color' : '86CFEB',
+			'link' : '',
+		},
+
+		'ё' : {
+			'nick' : 'Pacer',
+			'color' : 'DF6768',
+			'link' : '',
+		},
+
+		'ж' : {
+			'nick' : 'Rtue',
+			'color' : 'E68914',
+			'link' : '',
+		},
+
+		'з' : {
+			'nick' : 'Super',
+			'color' : '16698E',
+			'link' : '',
+		},
+
+		'и' : {
+			'nick' : 'Sugar 18',
+			'color' : '9E524A',
+			'link' : '',
+		},
+
+		'й' : {
+			'nick' : 'Pokras',
+			'color' : 'BA332A',
+			'link' : '',
+		},
+
+		'к' : {
+			'nick' : 'Квадрат',
+			'color' : '8BDAAB',
+			'link' : '',
+		},
+
+		'л' : {
+			'nick' : 'Sneksy',
+			'color' : 'F15A2A',
+			'link' : '',
+		},
+
+		'м' : {
+			'nick' : 'Taur',
+			'color' : '00AEAC',
+			'link' : '',
+		},
+
+		'н' : {
+			'nick' : 'Issue',
+			'color' : '999999',
+			'link' : '',
+		},
+
+		'о' : {
+			'nick' : 'Baks',
+			'color' : 'D09EDF',
+			'link' : '',
+		},
+
+		'п' : {
+			'nick' : 'Kreemos',
+			'color' : 'B1B1B1',
+			'link' : '',
+		},
+
+		'р' : {
+			'nick' : 'Brosk',
+			'color' : '1f248c',
+			'link' : '',
+		},
+
+// Р - Brosk / 1f248c - ДОБВИЛА САМА - в их файле уже такого нет
+
+
+		'с' : {
+			'nick' : 'Aber',
+			'color' : '252525',
+			'link' : '',
+		},
+
+// С - Aber / 252525 - добвила сама
+
+		'т' : {
+			'nick' : 'Keno',
+			'color' : 'FFE6B3',
+			'link' : '',
+		},
+
+// Т - Keno / Кено FFE6B3 ИСПРАВИЛА НА e09d49
+
+		'у' : {
+			'nick' : 'Jekie Dugn',
+			'color' : '848120',
+			'link' : '',
+		},
+
+		'ф' : {
+			'nick' : 'Petro',
+			'color' : '740f1c',
+			'link' : '',
+		},
+
+// Ф - Petro / 740f1c САМА ДОБАВИЛА
+
+		'х' : {
+			'nick' : 'Zmogk',
+			'color' : '541B38',
+			'link' : '',
+		},
+
+		'ц' : {
+			'nick' : 'Nootk!',
+			'color' : 'F1AB89',
+			'link' : '',
+		},
+
+		'ч' : {
+			'nick' : 'Dickey',
+			'color' : '74A2C6',
+			'link' : '',
+		},
+
+		'ш' : {
+			'nick' : 'Znag',
+			'color' : 'DAA8B8',
+			'link' : '',
+		},
+
+		'щ' : {
+			'nick' : 'Biggie K',
+			'color' : '00ADD9',
+			'link' : '',
+		},
+
+		'ъ' : {
+			'nick' : 'Wais',
+			'color' : '72716C',
+			'link' : '',
+		},
+
+		'ы' : {
+			'nick' : 'Letme',
+			'color' : '726B5E',
+			'link' : '',
+		},
+
+		'ь' : {
+			'nick' : 'Akue',
+			'color' : 'FB0000',
+			'link' : '',
+		},
+
+		'э' : {
+			'nick' : 'Truba',
+			'color' : '4BA5EE',
+			'link' : '',
+		},
+
+		'ю' : {
+			'nick' : 'Shozy',
+			'color' : '585F69',
+			'link' : '',
+		},
+
+		'я' : {
+			'nick' : 'nick',
+			'color' : 'ffc000', // должен быть 000, но текст не будет читаться, сделал золотой
+			'link' : '',
+		},
+
+	}
+
+
 });

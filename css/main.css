@@ -1643,3 +1643,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+.string-color z:hover {
+	cursor: pointer;
+}
