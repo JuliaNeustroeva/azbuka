@@ -329,6 +329,7 @@ $(document).ready(function () {
 
 		} else {
 			console.log('нет ссылки - /#/' + az_name.toLowerCase() + '.html' );
+			console.log(link + '/#/' + az_name.toLowerCase() + '.html');
 
 			window.location.href = link + '/#/' + az_name.toLowerCase() + '.html';
 
