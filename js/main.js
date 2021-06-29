@@ -264,7 +264,7 @@ $(document).ready(function () {
 
 	// возвращаем букву в теге для захвата объекта
 	function color_each(s) {
-		var new_s = '<z>' + s + '</z>';
+		var new_s = '<z class="letter">' + s + '</z>';
 		return new_s;
 	}
 
