@@ -263,24 +263,42 @@ $(document).ready(function () {
     }
 
 	// возвращаем букву в теге для захвата объекта
-	function color_each(s) {
-		var new_s = '<z class="letter">' + s + '</z>';
-		return new_s;
-	}
+
+	var tag_z = $('#tag-z');
+
+	tag_z.attr('id', '').addClass('letter test');
+
+	// function color_each(s) {
+	//
+	// 	var new_s = tag_z;
+	// 	new_s.text(s);
+	// 	// var new_s = '<z class="letter">' + s + '</z>';
+	// 	return new_s;
+	// }
 
 	// собираем массив букв
 	string = $('.string-color').text();
 	str = string.split('');
 
+	$('.string-color').text('');
+
 	// строим массив из букв с тегами для перекраски
 	var new_text = '';
 
 	$.each( str ,function(index,value){
-		new_text = new_text + color_each(value);
+		// new_text = new_text + color_each(value);
+
+		var new_s = tag_z.clone(true).text(value);
+		// new_s;
+
+		$('.string-color').append(new_s)
+
 	});
 
+
+
 	// заменяем текст на текст с буквами для перекраски
-	$('.string-color').html( new_text );
+	// $('.string-color').html( new_text );
 
 	// перекрашивание фона по наведению на букву
 	$('.string-color z').hover(function () {

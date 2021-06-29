@@ -1680,3 +1680,7 @@ body {
 	width: 100px;
 	fill: #fff;
 }
+
+.tag-z {
+	display: none;
+}
