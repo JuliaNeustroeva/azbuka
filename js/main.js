@@ -285,13 +285,16 @@ $(document).ready(function () {
 	// строим массив из букв с тегами для перекраски
 	var new_text = '';
 
+	$('.string-color').append( $('.string-color').parent().find('.manifest__title'));
+
 	$.each( str ,function(index,value){
 		// new_text = new_text + color_each(value);
 
 		var new_s = tag_z.clone(true).text(value);
 		// new_s;
 
-		$('.string-color').append(new_s)
+
+		$('.string-color').append(new_s);
 
 	});
 
@@ -304,7 +307,7 @@ $(document).ready(function () {
 	$('.string-color z').hover(function () {
 
 		// если не пробел, не знаки препинания
-		if( $(this).text().replace(/\s+/g, '') != '' && $(this).text() != '.' && $(this).text() != ',' && $(this).text() != '—'  ) {
+		if( $(this).text().replace(/\s+/g, '') != '' && $(this).text() != '.' && $(this).text() != ',' && $(this).text() != '—' && $(this).text() != '-'  ) {
 			$(this).css('color', '#fff');
 
 		   var bg_col = a_azbuka[ $(this).text().toLowerCase() ]['color'];
@@ -314,10 +317,12 @@ $(document).ready(function () {
 
 		   var z_w =  $('.azbuka-namer').outerWidth() / 2 ;
 
+		   // console.log( $(this).position().top, $(this).offset().top );
+
 		   // положение ника
 		   $('.azbuka-namer').css({
-			   'top': $(this).offset().top - 92,
-			   'left': $(this).offset().left - z_w + ( $(this).outerWidth() / 2 ),
+			   'top': $(this).offset().top - $('.azbuka-namer').height() - 13,
+			   'left': $(this).position().left - z_w + ( $(this).outerWidth() / 2 ),
 			   'display': 'flex'
 		   });
 

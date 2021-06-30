@@ -1660,7 +1660,7 @@ body {
 	height: 85px;
 	padding: 0px 35px;
 	color: #000;
-	position: fixed;
+	position: absolute;
 	top: 100px;
 	left: 100px;
 	display: none;
