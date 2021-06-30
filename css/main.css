@@ -1166,6 +1166,10 @@ body {
   margin-bottom: 35px;
 }
 
+.slider-about__img img {
+	width: 100%;
+}
+
 .slider-about__text {
   max-width: 330px;
   text-align: center;
