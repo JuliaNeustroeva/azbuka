@@ -365,211 +365,212 @@ $(document).ready(function () {
 		'а' : {
 			'nick' : 'Aske',
 			'color' : 'E74330',
-			'link' : '',
+			'link' : 'aske.html',
 		},
 
 		'б' : {
 			'nick' : 'Roof 169',
 			'color' : 'BE3F28',
-			'link' : '',
+			'link' : 'roof-169.html',
 		},
 
 		'в' : {
 			'nick' : 'Revansh',
 			'color' : '22686C',
-			'link' : '',
+			'link' : 'revansh.html',
 		},
 
 		'г' : {
 			'nick' : 'Luka',
 			'color' : 'CAACA4',
-			'link' : '',
+			'link' : 'luka.html',
 		},
 
 		'д' : {
 			'nick' : 'Slak',
 			'color' : 'E11E1A',
-			'link' : '',
+			'link' : 'slak.html',
 		},
 
 		'е' : {
 			'nick' : 'Kamar',
 			'color' : '86CFEB',
-			'link' : '',
+			'link' : 'kamar.html',
 		},
 
 		'ё' : {
 			'nick' : 'Pacer',
 			'color' : 'DF6768',
-			'link' : '',
+			'link' : 'pacer.html',
 		},
 
 		'ж' : {
 			'nick' : 'Rtue',
 			'color' : 'E68914',
-			'link' : '',
+			'link' : 'rtue.html',
 		},
 
 		'з' : {
 			'nick' : 'Super',
 			'color' : '16698E',
-			'link' : '',
+			'link' : 'super.html',
 		},
 
 		'и' : {
 			'nick' : 'Sugar 18',
 			'color' : '9E524A',
-			'link' : '',
+			'link' : 'sugar-18.html',
 		},
 
 		'й' : {
 			'nick' : 'Pokras',
 			'color' : 'BA332A',
-			'link' : '',
+			'link' : 'pokras-lampas.html',
 		},
 
 		'к' : {
 			'nick' : 'Квадрат',
 			'color' : '8BDAAB',
-			'link' : '',
+			'link' : 'kvadrat.html',
 		},
 
 		'л' : {
 			'nick' : 'Sneksy',
 			'color' : 'F15A2A',
-			'link' : '',
+			'link' : 'sneksy.html',
 		},
 
 		'м' : {
 			'nick' : 'Taur',
 			'color' : '00AEAC',
-			'link' : '',
+			'link' : 'taur.html',
 		},
 
 		'н' : {
 			'nick' : 'Issue',
 			'color' : '999999',
-			'link' : '',
+			'link' : 'issue.html',
 		},
 
 		'о' : {
 			'nick' : 'Baks',
 			'color' : 'D09EDF',
-			'link' : '',
+			'link' : 'baks.html',
 		},
 
 		'п' : {
 			'nick' : 'Kreemos',
 			'color' : 'B1B1B1',
-			'link' : '',
+			'link' : 'kreemos.html',
 		},
 
 		'р' : {
 			'nick' : 'Persh',
 			'color' : '1f248c',
-			'link' : '',
+			'link' : 'persh.html',
 		},
-
-// Р - Brosk / 1f248c - ДОБВИЛА САМА - в их файле уже такого нет
-
 
 		'с' : {
 			'nick' : 'Aber',
 			'color' : '636363',
-			'link' : '',
+			'link' : 'aber.html',
 		},
-
-// С - Aber / 636363 - добвила сама
 
 		'т' : {
 			'nick' : 'Keno',
 			'color' : 'e09d49',
-			'link' : '',
+			'link' : 'keno.html',
 		},
-
-// Т - Keno / Кено FFE6B3 ИСПРАВИЛА НА e09d49
 
 		'у' : {
 			'nick' : 'Jekie Dugn',
 			'color' : '848120',
-			'link' : '',
+			'link' : 'jekie-dugn.html',
 		},
 
 		'ф' : {
 			'nick' : 'Petro',
 			'color' : '740f1c',
-			'link' : '',
+			'link' : 'petro.html',
 		},
-
-// Ф - Petro / 740f1c САМА ДОБАВИЛА
 
 		'х' : {
 			'nick' : 'Zmogk',
 			'color' : '541B38',
-			'link' : '',
+			'link' : 'zmogk.html',
 		},
 
 		'ц' : {
 			'nick' : 'Nootk!',
 			'color' : 'F1AB89',
-			'link' : '',
+			'link' : 'nootk.html',
 		},
 
 		'ч' : {
 			'nick' : 'Dickey',
 			'color' : '74A2C6',
-			'link' : '',
+			'link' : 'dickey.html',
 		},
 
 		'ш' : {
 			'nick' : 'Znag',
 			'color' : 'DAA8B8',
-			'link' : '',
+			'link' : 'znag.html',
 		},
 
 		'щ' : {
 			'nick' : 'Biggie K',
 			'color' : '00ADD9',
-			'link' : '',
+			'link' : 'biggie-k.html',
 		},
 
 		'ъ' : {
 			'nick' : 'Wais',
 			'color' : '72716C',
-			'link' : '',
+			'link' : 'wais.html',
 		},
 
 		'ы' : {
 			'nick' : 'Letme',
 			'color' : '726B5E',
-			'link' : '',
+			'link' : 'letme.html',
 		},
 
 		'ь' : {
 			'nick' : 'Akue',
 			'color' : 'FB0000',
-			'link' : '',
+			'link' : 'akue.html',
 		},
 
 		'э' : {
 			'nick' : 'Truba',
 			'color' : '4BA5EE',
-			'link' : '',
+			'link' : 'truba.html',
 		},
 
 		'ю' : {
 			'nick' : 'Shozy',
 			'color' : '585F69',
-			'link' : '',
+			'link' : 'shozy.html',
 		},
 
 		'я' : {
 			'nick' : 'nick',
 			'color' : 'ffc000', // должен быть 000, но текст не будет читаться, сделал золотой
-			'link' : '',
+			'link' : 'name.html',
 		},
 
 	}
+
+	$('.string-color z').each( function() {
+
+		var value = $(this).text();
+
+		if( value.replace(/\s+/g, '') != '' && value != '.' && value != ',' && value != '—' && value != '-'  ) {
+			$(this).attr('data-page', a_azbuka[ value.toLowerCase() ]['link'] );
+		}
+	});
+
 
 
 });
