@@ -1,0 +1,12 @@
+const express = require("express");
+const app = express();
+
+const port = process.env.PORT || 3000;
+
+const root = __dirname + "/";
+
+app.use("/azbuka", express.static(root));
+
+app.listen(port, () => {
+  console.log(`Uploader app listening at http://localhost:${port}`);
+});
