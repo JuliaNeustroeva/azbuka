@@ -8,5 +8,5 @@ const root = __dirname + "/";
 app.use("/azbuka", express.static(root));
 
 app.listen(port, () => {
-  console.log(`Uploader app listening at http://localhost:${port}`);
+  console.log(`Azbuka app listening at http://localhost:${port}`);
 });
