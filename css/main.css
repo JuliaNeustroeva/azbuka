@@ -168,7 +168,7 @@ body {
   font-family: "SuisseIntl-SemiBold", "Arial", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: url("../images/ico/logo.svg") no-repeat center left/contain;
+  background: url("/azbuka/images/ico/logo.svg") no-repeat center left/contain;
 }
 
 @media only screen and (max-width: 767px) {
@@ -183,7 +183,7 @@ body {
 .hamburger {
   width: 50px;
   height: 30px;
-  background: url("../images/ico/hamburger.svg") no-repeat center center/contain;
+  background: url("/azbuka/images/ico/hamburger.svg") no-repeat center center/contain;
 }
 
 .hamburger:hover {
@@ -254,7 +254,7 @@ body {
   right: 85px;
   width: 40px;
   height: 40px;
-  background: url("../images/ico/close.svg") no-repeat center center/contain;
+  background: url("/azbuka/images/ico/close.svg") no-repeat center center/contain;
 }
 
 .menu__close:hover {
@@ -564,8 +564,8 @@ body {
 
 .gallery__action {
   height: 100vh;
-  cursor: url("../images/ico/arrow-right-black.svg"), auto;
-  background: #F0F0F0 url("../images/pic/pic-bg.svg") no-repeat center right/85%;
+  cursor: url("/azbuka/images/ico/arrow-right-black.svg"), auto;
+  background: #F0F0F0 url("/azbuka/images/pic/pic-bg.svg") no-repeat center right/85%;
 }
 
 @media only screen and (max-width: 1279px) {
@@ -606,7 +606,7 @@ body {
 
 .popup__close {
   width: 145px;
-  background: #4C525B url("../images/ico/back.svg") no-repeat center 55px/50px;
+  background: #4C525B url("/azbuka/images/ico/back.svg") no-repeat center 55px/50px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -666,12 +666,12 @@ body {
 
 .popup__prev {
   left: 0;
-  cursor: url("../images/ico/arrow-left-black.svg"), auto;
+  cursor: url("/azbuka/images/ico/arrow-left-black.svg"), auto;
 }
 
 .popup__next {
   right: 0;
-  cursor: url("../images/ico/arrow-right-black.svg"), auto;
+  cursor: url("/azbuka/images/ico/arrow-right-black.svg"), auto;
 }
 
 .popup__slider {
@@ -1022,7 +1022,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  cursor: url("../images/ico/arrow-right-white.svg"), auto;
+  cursor: url("/azbuka/images/ico/arrow-right-white.svg"), auto;
 }
 
 @media only screen and (max-width: 1279px) {
@@ -1604,7 +1604,7 @@ body {
   right: 40px;
   width: 32px;
   height: 32px;
-  background: url("../images/ico/close-page-black.svg") no-repeat center center/contain;
+  background: url("/azbuka/images/ico/close-page-black.svg") no-repeat center center/contain;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1620,7 +1620,7 @@ body {
   .back-link {
     top: 25px;
     right: 20px;
-    background: url("../images/ico/close-page-white.svg") no-repeat center center/32px;
+    background: url("/azbuka/images/ico/close-page-white.svg") no-repeat center center/32px;
   }
 }
 
