@@ -204,7 +204,7 @@ $(document).ready(function () {
     $(".letter").on("click", function () {
         var page = $(this).data("page");
 
-		console.loq(".letter", page, $(this).attr('data-page'));
+		console.log(".letter", page, $(this).attr('data-page'));
         requestPage(page);
     });
 
