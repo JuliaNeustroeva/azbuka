@@ -262,7 +262,7 @@ $(document).ready(function () {
 
   var tag_z = $("#tag-z");
 
-  tag_z.attr("id", "").addClass("letter test");
+  tag_z.attr("id", "").addClass("letter");
 
   // function color_each(s) {
   //
@@ -289,9 +289,11 @@ $(document).ready(function () {
     // new_text = new_text + color_each(value);
 
     var new_s = tag_z.clone(true).text(value);
-    // new_s;
 
-    $(".string-color").append(new_s);
+	if( value != '') {
+		$(".string-color").append(new_s);
+	}
+    
   });
 
   // заменяем текст на текст с буквами для перекраски
