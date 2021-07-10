@@ -273,7 +273,7 @@ $(document).ready(function () {
   // }
 
   // собираем массив букв
-  string = $(".string-color").text();
+  string = $(".string-color").text().trim();
   str = string.split("");
 
   $(".string-color").text("");
@@ -293,7 +293,7 @@ $(document).ready(function () {
 	if( value != '') {
 		$(".string-color").append(new_s);
 	}
-    
+
   });
 
   // заменяем текст на текст с буквами для перекраски
