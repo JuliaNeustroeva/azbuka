@@ -1663,6 +1663,7 @@ body {
   width: 100%;
   display: none;
   background: #fff;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 767px) {
