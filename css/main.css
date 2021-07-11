@@ -828,6 +828,8 @@ body {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+	display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1668,6 +1670,12 @@ body {
     height: 100vh;
     overflow-y: auto;
   }
+}
+
+@media only screen and (max-width: 767px) {
+	.letter {
+		width: calc(50% - 20px);
+	}
 }
 
 .letter {
