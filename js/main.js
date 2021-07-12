@@ -498,9 +498,9 @@ $(document).ready(function () {
     },
 
     ч: {
-      nick: "Dickey",
+      nick: "Dikey",
       color: "74A2C6",
-      link: "dickey.html",
+      link: "dikey.html",
     },
 
     ш: {
