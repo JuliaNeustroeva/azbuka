@@ -1220,6 +1220,9 @@ body {
     display: block;
   }
 }
+/* .artist-name {
+	height: 100vh;
+} */
 
 .artist__left {
   height: 100vh;
@@ -1248,25 +1251,22 @@ body {
 	letter-spacing: 0.15em;
 }
 
-.artist-name .artist__left {
-	background: none;
+.artist-name-block {
+	padding-top: 30px;
+	width: 100vw;
+    display: flex;
+}
+
+.artist-name-block-content {
 	color: #fff;
 	padding-top: 50px;
 	padding-left: 65px;
-	overflow-y: inherit;
-}
-
-.artist-name .artist__right {
-	overflow-y: inherit;
-}
-
-.artist-name-block {
-	padding-top: 30px;
-	text-align: center;
+	width: 50%;
 }
 
 
 .artist-name-string {
+	width: 50%;
 	font-family: 'SuisseIntlBlack';
     font-size: 760px;
     line-height: 500px;
