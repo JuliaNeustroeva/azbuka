@@ -1298,8 +1298,7 @@ body {
 	}
 
 	.artist-name-block-content {
-		padding: 20px;
-		padding-top: 0px;
+		padding: 0px 20px 95px 20px;
 		width: inherit;
 	}
 }
