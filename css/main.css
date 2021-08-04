@@ -1220,14 +1220,16 @@ body {
     display: block;
   }
 }
-/* .artist-name {
-	height: 100vh;
-} */
 
 .artist__left {
   height: 100vh;
   background: #F0F0F0;
   overflow-y: auto;
+}
+
+.artist-name {
+	height: 100vh;
+	background-color: #E74330;
 }
 
 .artist-name h1 {
@@ -1252,7 +1254,7 @@ body {
 }
 
 .artist-name-block {
-	padding-top: 30px;
+	padding-top: 40px;
 	width: 100vw;
     display: flex;
 }
@@ -1266,6 +1268,7 @@ body {
 
 
 .artist-name-string {
+	text-align: center;
 	width: 50%;
 	font-family: 'SuisseIntlBlack';
     font-size: 760px;
