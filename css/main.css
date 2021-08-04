@@ -1232,6 +1232,10 @@ body {
 	color: #fff;
 }
 
+.artist-name .artist-name-block {
+	padding-top: 155px;
+}
+
 .artist-name-string {
 	font-family: 'SuisseIntlBlack';
     font-size: 760px;
