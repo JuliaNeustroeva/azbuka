@@ -1257,17 +1257,14 @@ body {
 }
 
 .artist-name .artist__right {
-	padding-top: 30px;
 	overflow-y: inherit;
 }
 
-/* .artist-name .artist-name-block {
-	padding-top: 105px;
-} */
+.artist-name-block {
+	padding-top: 30px;
+	text-align: center;
+}
 
-/* .artist-name .artist__right .artist-name-block {
-	padding-top: 105px;
-} */
 
 .artist-name-string {
 	font-family: 'SuisseIntlBlack';
