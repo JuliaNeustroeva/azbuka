@@ -1227,11 +1227,11 @@ body {
   overflow-y: auto;
 }
 
-
-
 .artist-name h1 {
 	font-size: 56px;
 	line-height: 60px;
+	padding-top: 105px;
+	padding-bottom: 43px;
 }
 
 .artist-name h2 {
@@ -1239,10 +1239,13 @@ body {
 	line-height: 25px;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
+	padding-top: 60px;
+	padding-bottom: 37px;
 }
 
 .uppercase {
 	text-transform: uppercase;
+	letter-spacing: 0.15em;
 }
 
 .artist-name .artist__left {
@@ -1250,11 +1253,17 @@ body {
 	color: #fff;
 	padding-top: 50px;
 	padding-left: 65px;
+	overflow-y: inherit;
 }
 
-.artist-name .artist-name-block {
-	padding-top: 105px;
+.artist-name .artist__right {
+	padding-top: 30px;
+	overflow-y: inherit;
 }
+
+/* .artist-name .artist-name-block {
+	padding-top: 105px;
+} */
 
 /* .artist-name .artist__right .artist-name-block {
 	padding-top: 105px;
