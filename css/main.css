@@ -1227,18 +1227,38 @@ body {
   overflow-y: auto;
 }
 
+
+
+.artist-name h1 {
+	font-size: 56px;
+	line-height: 60px;
+}
+
+.artist-name h2 {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
 .artist-name .artist__left {
 	background: none;
 	color: #fff;
+	padding-top: 50px;
+	padding-left: 65px;
 }
 
 .artist-name .artist-name-block {
-	padding-top: 155px;
-}
-
-.artist-name .artist__right .artist-name-block {
 	padding-top: 105px;
 }
+
+/* .artist-name .artist__right .artist-name-block {
+	padding-top: 105px;
+} */
 
 .artist-name-string {
 	font-family: 'SuisseIntlBlack';
