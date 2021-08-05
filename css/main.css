@@ -469,12 +469,33 @@ body {
 	font-size: 35px;
 	line-height: 35px;
 	font-family: "NekstBold", "Nekst-Bold", "Arial", sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .manifest__concurs .small {
 	font-size: 12px;
 	line-height: 17px;
-	font-family: "SuisseIntlBlack", "SuisseIntl-Black", "Arial", sans-serif;
+	font-family: 'Nekst-SemiBold';
+}
+
+@media only screen and (max-width: 767px) {
+	.manifest__concurs {
+		width: 224px;
+	    height: 218px;
+	    background-size: contain;
+		font-size: 25px;
+		line-height: 35px;
+		font-family: 'Nekst-SemiBold';
+	}
+
+	.manifest__concurs .small {
+		font-size: 12px;
+		line-height: 16px;
+	}
 }
 
 @media only screen and (max-width: 1279px) {
