@@ -465,6 +465,16 @@ body {
 	background: url('/azbuka/images/pic/concurs.png') no-repeat center;
 	width: 262px;
 	height: 254px;
+	color: #fff;
+	font-size: 35px;
+	line-height: 35px;
+	font-family: "NekstBold", "Nekst-Bold", "Arial", sans-serif;
+}
+
+.manifest__concurs .small {
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "SuisseIntlBlack", "SuisseIntl-Black", "Arial", sans-serif;
 }
 
 @media only screen and (max-width: 1279px) {
