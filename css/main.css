@@ -455,6 +455,14 @@ body {
   padding: 180px 0 125px;
   font-family: "NekstBold", "Nekst-Bold", "Arial", sans-serif;
   font-size: 56px;
+  position: relative;
+}
+
+.manifest__concurs {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: url('/azbuka/images/pic/concurs.png') no-repeat center;
 }
 
 @media only screen and (max-width: 1279px) {
