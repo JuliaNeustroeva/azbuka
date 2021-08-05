@@ -474,12 +474,14 @@ body {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+	padding-top: 25px;
 }
 
 .manifest__concurs .small {
 	font-size: 12px;
 	line-height: 17px;
 	font-family: 'Nekst-SemiBold';
+	margin-top: 5px;
 }
 
 @media only screen and (max-width: 767px) {
