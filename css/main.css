@@ -459,7 +459,9 @@ body {
 }
 
 .manifest__concurs {
-	position: absolute;
+	/* position: absolute; */
+	position: fixed;
+    z-index: 999;
 	bottom: 0px;
 	right: 0px;
 	background: url('/azbuka/images/pic/concurs.png') no-repeat center;
