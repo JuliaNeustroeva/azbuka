@@ -170,8 +170,20 @@ body {
   text-transform: uppercase;
   background: url("/azbuka/images/ico/logo.svg") no-repeat center left/contain;
 
-  height: 77px;
-  background: url("/azbuka/images/ico/abc_logo_color.svg") no-repeat center left/contain;
+	height: 68px;
+	background: url("/azbuka/images/ico/abc_logo_color.svg") no-repeat center left/contain;
+	padding-left: 178px;
+	padding-top: 20px;
+
+	font-family: 'NekstBold';
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.logo:hover {
+	background: url("/azbuka/images/ico/abc_logo_bw.svg") no-repeat center left/contain;
 }
 
 @media only screen and (max-width: 767px) {
