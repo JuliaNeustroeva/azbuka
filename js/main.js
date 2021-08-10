@@ -259,7 +259,6 @@ $(document).ready(function () {
   }
 
   // возвращаем букву в теге для захвата объекта
-
   var tag_z = $("#tag-z");
 
   tag_z.attr("id", "").addClass("letter");
@@ -331,6 +330,9 @@ $(document).ready(function () {
         });
 
         $("body").css("background", "#" + bg_col);
+
+		// заменяем лого
+		$('.logo').addClass('logo-invert');
       }
     },
 
@@ -342,6 +344,9 @@ $(document).ready(function () {
       $(".azbuka-namer").css({
         display: "none",
       });
+
+	  // возвращаем лого 
+	  $('.logo').removeClass('logo-invert');
     },
   );
 
