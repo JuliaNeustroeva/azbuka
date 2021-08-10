@@ -171,6 +171,7 @@ body {
   background: url("/azbuka/images/ico/logo.svg") no-repeat center left/contain;
 
 	height: 68px;
+	background: url("/azbuka/images/ico/abc_logo_bw.svg") no-repeat center left/contain; /* preload */
 	background: url("/azbuka/images/ico/abc_logo_color.svg") no-repeat center left/contain;
 	padding-left: 178px;
 	padding-top: 20px;
@@ -182,7 +183,7 @@ body {
 	color: #000000;
 }
 
-.logo:hover {
+.logo-invert {
 	background: url("/azbuka/images/ico/abc_logo_bw.svg") no-repeat center left/contain;
 }
 
