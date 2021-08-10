@@ -168,7 +168,9 @@ body {
   font-family: "SuisseIntl-SemiBold", "Arial", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  /* background: url("/azbuka/images/ico/logo.svg") no-repeat center left/contain; */
+  background: url("/azbuka/images/ico/logo.svg") no-repeat center left/contain;
+
+  height: 77px;
   background: url("/azbuka/images/ico/abc_logo_color.svg") no-repeat center left/contain;
 }
 
