@@ -485,7 +485,7 @@ body {
 .manifest__concurs {
 	/* position: absolute; */
 	position: fixed;
-    z-index: 100;
+    z-index: 1;
 	bottom: 0px;
 	right: 0px;
 	background: url('/azbuka/images/pic/concurs.png') no-repeat center;
@@ -1871,4 +1871,8 @@ body {
 
 .tag-z {
 	display: none;
+}
+
+.class-scroll {
+	overflow: auto;
 }
