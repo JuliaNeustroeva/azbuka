@@ -485,7 +485,7 @@ body {
 .manifest__concurs {
 	/* position: absolute; */
 	position: fixed;
-    z-index: 999;
+    z-index: 100;
 	bottom: 0px;
 	right: 0px;
 	background: url('/azbuka/images/pic/concurs.png') no-repeat center;
@@ -513,7 +513,8 @@ body {
 @media only screen and (max-width: 767px) {
 	.manifest__concurs {
 		width: 224px;
-	    height: 218px;
+	    height: 217px;
+		background: url('/azbuka/images/pic/concurs_m.png') no-repeat center;
 	    background-size: contain;
 		font-size: 25px;
 		line-height: 35px;

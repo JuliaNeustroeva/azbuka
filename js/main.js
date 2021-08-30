@@ -263,14 +263,6 @@ $(document).ready(function () {
 
   tag_z.attr("id", "").addClass("letter");
 
-  // function color_each(s) {
-  //
-  // 	var new_s = tag_z;
-  // 	new_s.text(s);
-  // 	// var new_s = '<z class="letter">' + s + '</z>';
-  // 	return new_s;
-  // }
-
   // собираем массив букв
   string = $(".string-color").text().trim();
   str = string.split("");
@@ -295,9 +287,6 @@ $(document).ready(function () {
 
   });
 
-  // заменяем текст на текст с буквами для перекраски
-  // $('.string-color').html( new_text );
-
   // перекрашивание фона по наведению на букву
   $(".string-color z").hover(
     function () {
@@ -317,8 +306,6 @@ $(document).ready(function () {
         $(".azbuka-namer span").text(az_name);
 
         var z_w = $(".azbuka-namer").outerWidth() / 2;
-
-        // console.log( $(this).position().top, $(this).offset().top );
 
         // положение ника
         $(".azbuka-namer").css({
@@ -345,7 +332,7 @@ $(document).ready(function () {
         display: "none",
       });
 
-	  // возвращаем лого 
+	  // возвращаем лого
 	  $('.logo').removeClass('logo-invert');
     },
   );
